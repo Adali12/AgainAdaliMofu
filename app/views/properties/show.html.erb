@@ -5,29 +5,23 @@
   <strong>Property:</strong>
   <%= @property.property %>
 </p>
-
 <p>
   <strong>Rent:</strong>
   <%= @property.rent %>
 </p>
-
 <p>
   <strong>Adress:</strong>
   <%= @property.adress %>
 </p>
-
 <p>
   <strong>Building age:</strong>
   <%= @property.building_age %>
 </p>
-
 <p>
   <strong>Remarks:</strong>
   <%= @property.remarks %>
 </p>
 </div>
-
- 
 <% @property.stations.each do |poor| %>
   <% if @property.id == poor.property_id %>
     <h2><b>Nearest station </b></h2>
@@ -35,7 +29,6 @@
       <strong>Name of railway line:</strong>
       <%= poor.name_of_railway_line %>
     </p>
-
     <p>
       <strong>Statation name:</strong>
       <%= poor.statation_name %>
